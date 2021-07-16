@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway&display=swap');
+/*
+ Realizado por Miguel Pérez
+ Estilo Material Design
+*/
+html{
+    width:100%;
+    word-break: break-word;
+    line-height: 1.35;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+:root{
+    --primary-color: #44BBA4;
+    --secondary-color: #E7BB41;
+    --info-color: #96BB73;
+    --bg-light-color: white;
+    --bg-dark-color: #393E41;
+}
+
+.secondary{
+    background-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+.info{
+    background-color: var(--info-color);
+    background: var(--info-color);
+}
+
+.navbar{
+    background-color: var(--primary-color);
+    color: var(--bg-light-color);
+    overflow: hidden;
+    position: sticky;
+    top:0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.85);
+}
+
+.navbar > *{
+    padding: 1.2rem;
+    display: block;
+    float: left;
+    line-height: 2rem;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: var(--bg-light-color);
+}
+
+.navbar > :first-child{
+    float: right;
+    font-size: 1.4rem;
+}
+
+.right-drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-light-color);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.85);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .right-drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .right-drawer a:hover {
+    color: #f1f1f1;
+  }
+  
+  .right-drawer .closeCart {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  
+  #main {
+    transition: margin-right .5s;
+  }
+  
+
+
+.title {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.content {
+    font-family: 'Raleway', sans-serif;
+}
+
+.quantity-input{
+    display: inline-block;
+    border:  rgba(255, 255, 255, 0.0);
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.85);
+    width: 20% !important;
+    margin: auto !important;
+    text-align: center;
+}
+
+.cart-element {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 0px;
+    row-gap: 20px;
+    justify-items: stretch;
+    align-items: start;
+ }
+
+.card{
+    padding: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.85);
+}
+
+.card > *{
+    width: 97%;
+    overflow: auto;
+    margin: auto;
+}
+
+.card-img{
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: inherit;
+    margin: 0 !important;
+    padding: 0 0 0 0 !important;
+}
+
+.light-bg{
+    background-color: var(--bg-light-color);
+}
+
+.dark-bg{
+    background-color: var(--bg-dark-color);
+}
+
+ul, li{
+    list-style: disc inside;
+}
+
+.container {
+    display: grid;
+    overflow-x: hidden;
+    padding: 0.8rem;
+    column-gap: 1vw;
+    row-gap: 1vw;
+    justify-items: stretch;
+    align-items: center;
+}
+
+.container > *{
+    width: 97%;
+    margin: 0.7rem 0;
+}
+
+.catalog{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 2fr 2fr;
+}
+
+.actions{
+    display: inline-block;
+    width: 97%;
+    text-align: right;
+}
+
+.button{
+    border:  rgba(255, 255, 255, 0.0);
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: var(--primary-color);
+    padding: 0.6rem 1.1rem;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.85);
+    transition-duration: 0.4s;
+}
+.button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.tile{
+    float: right;
+}
+
+section{
+    padding: 0.7rem 1rem ;
+}
+
+@media screen and (max-height: 450px) {
+    .right-drawer {padding-top: 15px;}
+    .right-drawer a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 600px){
+    .catalog{
+        grid-template-columns: auto !important;
+        grid-template-rows: 2fr 2fr 2fr !important;
+    }
+  }
+
+form > input{
+    margin: 1rem;
+}
